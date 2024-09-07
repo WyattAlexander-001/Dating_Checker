@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Scale Point System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sliding Scale Point System</h1>
+        <form id="scale-form">
+            <!-- Add as many traits as you like -->
+            <div class="trait">
+                <label>Can cook</label>
+                <input type="checkbox" class="yes-no" data-point="1"> Yes
+                <input type="checkbox" class="yes-no" data-point="-1"> No
+            </div>
+            <div class="trait">
+                <label>Can clean</label>
+                <input type="checkbox" class="yes-no" data-point="1"> Yes
+                <input type="checkbox" class="yes-no" data-point="-1"> No
+            </div>
+            <div class="trait">
+                <label>Can do laundry</label>
+                <input type="checkbox" class="yes-no" data-point="1"> Yes
+                <input type="checkbox" class="yes-no" data-point="-1"> No
+            </div>
+            <!-- Add more traits here -->
+        </form>
+        <button onclick="calculateScore()">Calculate Score</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
